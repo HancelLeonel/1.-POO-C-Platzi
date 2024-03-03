@@ -33,6 +33,8 @@ string resultSuperPoderes = superman.UsarSuperPoderes();
 Console.WriteLine(resultSuperPoderes);
 string resultSalvarMundo = superman.SalvarElMundo();
 Console.WriteLine(resultSalvarMundo);
+string resultSalvarTierraP = superman.SalvarLaTierraPolimorfo();
+Console.WriteLine(resultSalvarTierraP);
 
 var wolverine = new AntiHeroe();
 wolverine.Id = 5;

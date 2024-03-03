@@ -10,4 +10,9 @@ abstract class Heroe
     {
         return $"{Nombre} ha salvado la Tierra";
     }
+
+    public virtual string SalvarLaTierraPolimorfo()
+    {
+        return $"{Nombre} ha salvado la Tierra";
+    }
 }

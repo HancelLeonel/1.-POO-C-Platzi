@@ -51,4 +51,11 @@ class SuperHeroe : Heroe
     {
         return $"{NombreeIdentidadSecreta} ha salvado el mundo";
     }
+
+    public override string SalvarLaTierraPolimorfo()
+    {
+        //Hace lo que hace el padre más lo que está abajo
+        //return base.SalvarLaTierra();
+        return $"{NombreeIdentidadSecreta} ha salvado la tierra";
+    }
 }
