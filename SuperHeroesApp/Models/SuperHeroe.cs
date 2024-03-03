@@ -1,11 +1,12 @@
 using System.Text;
+using SuperHeroesApp.Interfaces;
 
 namespace SuperHeroesApp.Models;
 
-class SuperHeroe : Heroe
+class SuperHeroe : Heroe, ISuperHeroe 
 {
     private string _Nombre;
-    public int Id;
+    public int Id { get; set; }
     public override string Nombre
     {
         get
@@ -25,7 +26,7 @@ class SuperHeroe : Heroe
             return $"En la realidad {Nombre} es {IdentidadSecreta}";
         }
     }
-    public string IdentidadSecreta;
+    public string IdentidadSecreta { get; set; }
     public string Ciudad;
     public List<SuperPoder> SuperPoderes;
     public bool PuedeVolar;
