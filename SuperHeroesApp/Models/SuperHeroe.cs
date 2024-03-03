@@ -2,11 +2,11 @@ using System.Text;
 
 namespace SuperHeroesApp.Models;
 
-class SuperHeroe
+class SuperHeroe : Heroe
 {
     private string _Nombre;
     public int Id;
-    public string Nombre
+    public override string Nombre
     {
         get
         {
@@ -45,5 +45,10 @@ class SuperHeroe
             sb.AppendLine($"{NombreeIdentidadSecreta}");
         }
         return sb.ToString();
+    }
+
+    public override string SalvarElMundo()
+    {
+        return $"{NombreeIdentidadSecreta} ha salvado el mundo";
     }
 }

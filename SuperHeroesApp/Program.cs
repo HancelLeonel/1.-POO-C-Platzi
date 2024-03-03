@@ -29,9 +29,10 @@ List<SuperPoder> poderesSuperman = new List<SuperPoder>();
 poderesSuperman.Add(poderVolar);
 poderesSuperman.Add(superFuerza);
 superman.SuperPoderes = poderesSuperman;
-
 string resultSuperPoderes = superman.UsarSuperPoderes();
 Console.WriteLine(resultSuperPoderes);
+string resultSalvarMundo = superman.SalvarElMundo();
+Console.WriteLine(resultSalvarMundo);
 
 var wolverine = new AntiHeroe();
 wolverine.Id = 5;
